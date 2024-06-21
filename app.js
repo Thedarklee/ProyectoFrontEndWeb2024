@@ -85,5 +85,5 @@ app.delete('/eliminar_usuario/:id', (req, res) => {
 
 // Iniciar el servidor
 app.listen(port, () => {
-    console.log(`Servidor escuchando en el puerto ${port}`);
+    console.log(` http://localhost:3000 Servidor escuchando en el puerto ${port}`);
 });
