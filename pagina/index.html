@@ -96,7 +96,13 @@
             fetch("/usuarios/" + id)
             .then(function(response){
                 return response.json();
-            });
+            })
+            .then(function(datos){
+                document.getElementById("detallesUsuario").textContent = 
+                "ID: " + datos .id + 
+                "\nCorreo:" + datos.correo + 
+                + "\nRol: " + datos.rol;
+            })
 
         }
     </script>
