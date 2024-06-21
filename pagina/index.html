@@ -90,6 +90,15 @@
                 });
         });
     </script>
+    <script>
+        function verDetalles(id){
+            //Realizo una solicitud para obtener los datos
+            fetch("/usuarios/" + id)
+            .then(function(response){
+                return response.json();
+            });
 
+        }
+    </script>
 </body>
 </html>
